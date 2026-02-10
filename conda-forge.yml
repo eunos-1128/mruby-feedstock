@@ -10,7 +10,6 @@ build_platform:
   linux_ppc64le: linux_ppc64le
   osx_arm64: osx_arm64
 provider:
-provider:
   linux_aarch64: default
   linux_ppc64le: default
   osx_arm64: default
