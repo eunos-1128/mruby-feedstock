@@ -1,8 +1,8 @@
 diff --git a/mrbgems/mruby-bigint/core/bigint.c b/mrbgems/mruby-bigint/core/bigint.c
-index 4ef5319f6..ad907e6a8 100644
+index 4a561c182..e3811dc6f 100644
 --- a/mrbgems/mruby-bigint/core/bigint.c
 +++ b/mrbgems/mruby-bigint/core/bigint.c
-@@ -5480,7 +5480,7 @@ mrb_bint_as_int64(mrb_state *mrb, mrb_value x)
+@@ -1447,7 +1447,7 @@ mrb_bint_as_int64(mrb_state *mrb, mrb_value x)
    uint64_t u = 0;
    size_t len = digits(&m);
  
@@ -11,7 +11,7 @@ index 4ef5319f6..ad907e6a8 100644
    out_of_range:
      mrb_raise(mrb, E_RANGE_ERROR, "integer out of range");
    }
-@@ -5504,7 +5504,7 @@ mrb_bint_as_uint64(mrb_state *mrb, mrb_value x)
+@@ -1471,7 +1471,7 @@ mrb_bint_as_uint64(mrb_state *mrb, mrb_value x)
    uint64_t u = 0;
    size_t len = digits(&m);
  
